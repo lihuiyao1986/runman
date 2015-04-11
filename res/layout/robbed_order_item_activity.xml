@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/subscribeTime_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/width10"
+            android:paddingLeft="@dimen/width15"
+            android:paddingTop="@dimen/width20" >
+
+            <TextView
+                android:layout_width="@dimen/width70"
+                android:layout_height="wrap_content"
+                android:text="预约时间"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/robbed_subscribeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天 14:00~15:00"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+            <ImageView
+                android:id="@+id/robbed_order_ongoing_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="@dimen/width2"
+                android:src="@drawable/order_ongoing_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carNum_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/width10"
+            android:paddingLeft="@dimen/width15"
+            android:paddingTop="@dimen/width10" >
+
+            <TextView
+                android:layout_width="@dimen/width70"
+                android:layout_height="wrap_content"
+                android:text="车牌号"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/robbed_carNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浙ATE330"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carPosition_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/width20"
+            android:paddingLeft="@dimen/width15"
+            android:paddingTop="@dimen/width10" >
+
+            <TextView
+                android:layout_width="@dimen/width70"
+                android:layout_height="wrap_content"
+                android:text="停车点"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/robbed_carPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圣元北街15号车乐通楼下"
+                android:maxWidth="@dimen/width180"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/robbed_order_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width5"
+        android:background="@null"
+        android:src="@drawable/go_to_icon" />
+
+</LinearLayout>

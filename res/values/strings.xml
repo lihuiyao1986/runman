@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 应用程序名称 -->
+    <string name="app_name">微水洗车</string>
+    <string name="app_name_en">runman</string>
+
+    <!-- 服务端版本号 -->
+    <string name="server_version">1.0.0</string>
+    <string name="sign_key">0123456789</string>
+
+    <!-- 新版本下载名称 -->
+    <string name="apk_name">runman.apk</string>
+
+    <!-- 是否是调试模式 1:是 0:不是 -->
+    <string name="isDebug">1</string>
+
+    <!-- 登录密码规则 -->
+    <string name="pwd_digis">0123456789abcdefghigklmnopqrstuvwxyz</string>
+
+    <!-- 引导页 -->
+    <string name="start_button_text">立即体验</string>
+
+    <!-- 客服电话 -->
+    <string name="servicePhoneNumber">4006865001</string>
+    <string name="callServicePhoneTip">确定拨打客服电话?</string>
+    <string name="callCustomerPhoneTip">确定拨打车主电话?</string>
+
+    <!-- 更新跑男位置的时间间隔(单位秒) -->
+    <string name="update_runman_loc_interval">60</string>
+
+    <!-- 首页slide菜单的宽度 单位为dp -->
+    <string name="index_page_left_slide_menu_offset">220</string>
+
+    <!-- 登录模块 -->
+    <string name="Label_LoginTitle">手机号:</string>
+    <string name="Label_PwdTitle">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="Hint_PhoneNum">请输入手机号码</string>
+    <string name="Hint_Password">请输入您的密码</string>
+    <string name="Button_Login">登    录</string>
+    <string name="CheckBox_rememberPwd">记住密码</string>
+    <string name="Image_Desc">图片</string>
+    <string name="Label_CompanyName">杭州乐和车上科技有限公司</string>
+    <string name="Service_Phone_Number">0571&#8211;89987325</string>
+    <string name="back_exit_tips">再按一次返回键退出应用</string>
+
+    <!-- 首页 -->
+    <string name="index_completedToday">今日完成</string>
+    <string name="index_order">单</string>
+
+    <!-- 设备状态描述 -->
+    <string name="machine_status_off">关机</string>
+    <string name="machine_status_openning">开机中</string>
+    <string name="machine_status_booth_scanning">蓝牙扫描中</string>
+    <string name="machine_status_booth_connecting">蓝牙连接中</string>
+    <string name="machine_status_booth_connected">蓝牙已连接</string>
+    <string name="machine_status_matching">设备配对中</string>
+    <string name="machine_status_matched">设备已配对</string>
+    <string name="machine_status_ready">设备准备就绪</string>
+    <string name="machine_status_switch_working">正在切换工作状态</string>
+    <string name="machine_status_switch_stop">正在切换停止状态</string>
+    <string name="machine_status_stopped">设备处于停止状态</string>
+    <string name="machine_status_working">设备处于工作状态</string>
+    <string name="machine_status_offlining">正在关机</string>
+
+    <!-- 设备交互失败描述 -->
+    <string name="bluetooth_none">找不到蓝牙设备</string>
+    <string name="bluetooth_open_failed">打开蓝牙失败</string>
+    <string name="bluetooth_connect_failed">蓝牙连接失败</string>
+    <string name="bluetooth_connect_lost">蓝牙连接丢失</string>
+    <string name="machine_not_found">找不到设备</string>
+    <string name="machine_connect_failed">设备连接失败</string>
+    <string name="machine_work_failed">设备没有开始工作，不能停止工作</string>
+    <string name="machine_stop_failed">关闭水泵失败</string>
+    <!-- <string name="machine_off_failed">交互设备关闭失败</string> -->
+    <string name="machine_lower_power">电池电量低,请及时更换电池</string>
+    <string name="machine_not_ready">设备正在工作中</string>
+    <!-- <string name="machine_not_in_work">设备不在工作状态</string> -->
+
+
+    <!-- 开始洗车 -->
+    <string name="start_washCar">开始洗车</string>
+    <string name="first">1、</string>
+    <string name="first_desc">长按洗车机上的方键3秒开启交互设备,若电量低于10%,请更换电池.</string>
+    <string name="second">2、</string>
+    <string name="second_desc">交互设备开启以后,点击按钮"开机洗车",即可开始洗车.</string>
+    <string name="pair_status">配对状态:</string>
+    <string name="status_desc">未配对</string>
+    <string name="start_pair_btn">开始配对</string>
+    <string name="start_work">开机洗车</string>
+    <string name="power_off">洗车完成,关机</string>
+
+    <!-- 消息 -->
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+
+    <!-- 版本更新 -->
+    <string name="version_found_tips">发现新版本，是否开始更新！</string>
+
+    <!-- 请求地址 -->
+    <!-- 公网地址 -->
+    <string name="APIHOST">http://wsxc.hzclt.cn/man</string>
+    <!-- 测试环境 -->
+   	<!-- <string name="APIHOST">http://192.168.1.141:80/man</string> -->
+    <string name="IMGHOST"></string>
+    <string name="UPLOADHOST"></string>
+    <string name="QUERY_WEATHER_INFO_URL">http://api.map.baidu.com/telematics/v3/weather</string>
+    <string name="QUERY_WEATHER_BAIDU_KEY">n2ZDCKkQ1tRi0pHETkHrUPuP</string>
+
+    <!-- 接口路径 开始 -->
+    <!-- 登录 -->
+    <string name="login">/v1/man/user/login</string>
+    <!-- 获取跑男状态 -->
+    <string name="getRunManStatus">/v1/man/user/get_man_status</string>
+    <!-- 上班 -->
+    <string name="onDuty">/v1/man/user/on_duty</string>
+    <!-- 退出系统 -->
+    <string name="logoutUrl">/v1/man/user/out</string>
+    <!-- 下班 -->
+    <string name="offDuty">/v1/man/user/off_duty</string>
+    <!-- 上传个推ClientID -->
+    <string name="uploadClientId">/v1/man/user/uuid_save</string>
+    <!-- 上传跑男的地理位置信息 -->
+    <string name="uploadRunmanLocUrl">/v1/man/user/upload_local</string>
+    <!-- 自动登录接口 -->
+    <string name="autologinUrl">/v1/man/user/autologin</string>
+    <!-- 今日完成订单数查询接口 -->
+    <string name="todayFinishOrderUrl">/v1/man/order/finish_order</string>
+    <!-- 订单列表查询对应的url -->
+    <!-- <string name="orderListQueryUrl">/v1/man/order/get_order_list</string> -->
+    <string name="orderListQueryUrl">/v1/man/order/get_man_complete_order</string>
+    <!-- 收入统计查询 -->
+    <string name="incomeListQueryUrl">/v1/man/order/user_tongji</string>
+    <!-- 体验券列表查询 -->
+    <string name="experienceListQueryUrl">/v1/man/user/experience_list</string>
+    <!-- 线下支付确认接口 -->
+    <string name="offlinePayConfirmUrl">/v1/man/order/quan_ok</string>
+    <!-- 待抢单列表查询 -->
+    <string name="unRobbedOrderListQueryUrl">/v1/man/order/get_man_grab_order2</string>
+    <!-- 已抢单列表查询 -->
+    <string name="robbedOrderListQueryUrl">/v1/man/order/get_man_service_order2</string>
+
+    <!-- 获取订单状态 -->
+    <string name="ingOrder">/v1/man/order/ing_order</string>
+    <!-- 接单 -->
+    <string name="receiveOrder">/v1/man/order/receive_order</string>
+    <!-- 我已到达 -->
+    <string name="found">/v1/man/order/find</string>
+    <!-- 上传洗车照片 -->
+    <string name="washCarBefore">/v1/man/order/wash_upload_pic</string>
+    <!-- 开机洗车 -->
+    <string name="startWash">/v1/man/order/start_wash</string>
+    <!-- 完成洗车 -->
+    <string name="finishWash">/v1/man/order/finish_wash</string>
+    <!-- 获取交互设备MAC地址和配对密码 -->
+    <!-- <string name="getEquipment">/v1/man/user/get_equipment</string> -->
+    <!-- 确认赶往,跑男到达接单停车位 -->
+    <string name="arriveParkingUrl">/v1/man/order/arrive</string>
+    <!-- 洗车后拍照上传 -->
+    <string name="uploadAfterwashCar">/v1/man/order/upload_man_wash_after</string>
+    <!-- 洗车后拍照完成 -->
+    <string name="washAfter">/v1/man/order/wash_after</string>
+    <!-- 接口路径 结束 -->
+    <!-- 删除洗车照片的天数 2表示删除2天前所有的照片 -->
+    <string name="deleteWashcarPicInfoDay">2</string>
+    <!-- 获取最新版本信息 -->
+    <string name="getSoftVersion">/v1/man/user/get_soft_version</string>
+
+</resources>

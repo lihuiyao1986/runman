@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/order_info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/subscribeTime_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mLeft12"
+            android:layout_marginTop="@dimen/mTop24"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约时间"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/rob_subscribeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft10"
+                android:text="今天14:00~15:00"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/distance_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mLeft12"
+            android:layout_marginTop="@dimen/mTop18"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/rob_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft40"
+                android:text="1.5km"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carNum_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distance_line"
+            android:layout_marginLeft="@dimen/mLeft12"
+            android:layout_marginTop="@dimen/mTop18"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/rob_carNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft26"
+                android:text="浙ATE330"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carPosition_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carNum_line"
+            android:layout_marginLeft="@dimen/mLeft12"
+            android:layout_marginTop="@dimen/mTop18"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mTop24"
+                android:text="停车点"
+                android:textColor="@color/color_31"
+                android:textSize="@dimen/tSize15" />
+
+            <TextView
+                android:id="@+id/rob_carPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mTop24"
+                android:layout_marginLeft="@dimen/mLeft26"
+                android:text="圣元北街15号车乐通楼下"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rob_order_btn"
+        android:layout_width="@dimen/width70"
+        android:layout_height="@dimen/height48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/mLeft18"
+        android:background="@drawable/shape_blue_btn"
+        android:text="抢单"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tSize20" />
+
+</RelativeLayout>    

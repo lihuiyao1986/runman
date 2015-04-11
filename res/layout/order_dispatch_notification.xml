@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/width15"
+        android:paddingRight="@dimen/width15"
+        android:contentDescription=""
+        android:scaleType="center"
+        android:src="@drawable/notify_icon" />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您有新订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tSize20" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/width2"
+            android:text="赶紧接单，否则误大事了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tSize16" />
+    </LinearLayout>
+</LinearLayout>

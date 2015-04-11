@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/weather_info_list_item_left"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <!-- 日期 -->
+        <TextView
+            android:id="@+id/weather_info_list_item_date_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/mBottom10"
+            android:text="今天"
+            android:textColor="@color/color_23"
+            android:textSize="@dimen/tSize20" />
+        
+        <!-- 天气情况图片 -->
+        <ImageView
+            android:id="@+id/weather_info_list_item_pic_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="天气图片"
+            android:layout_marginBottom="@dimen/mBottom10"
+            android:scaleType="fitCenter" />
+        
+        <!-- 描述 -->
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_info_list_item_weather_desc_tv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="晴天"
+            android:layout_marginBottom="@dimen/mBottom5"
+            android:textColor="@color/color_23"
+            android:textSize="@dimen/tSize14"
+            />
+
+        <!-- 温度 -->
+        <TextView
+            android:id="@+id/weather_info_list_item_temperature_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="11～7"
+            android:layout_marginBottom="@dimen/mBottom10"
+            android:textColor="@color/color_23"
+            android:textSize="@dimen/tSize20" />
+
+        <!-- 是否适合洗车的提示 -->
+       <!--  <TextView
+            android:id="@+id/weather_info_list_item_washcar_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/height5"
+            android:layout_marginBottom="@dimen/height10"
+            android:text="宜洗车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tSize14" /> -->
+    </LinearLayout>
+</RelativeLayout>

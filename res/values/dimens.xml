@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 宽度 -->
+   <dimen name="width05">0.5dp</dimen>
+   <dimen name="width1">1.0dp</dimen>
+   <dimen name="width2">2dp</dimen>
+   <dimen name="width5">5dp</dimen>
+   <dimen name="width8">8dp</dimen>
+   <dimen name="width10">10dp</dimen>
+   <dimen name="width12">12dp</dimen>
+   <dimen name="width15">15dp</dimen>
+   <dimen name="width16">16dp</dimen>
+   <dimen name="width18">18dp</dimen>
+   <dimen name="width20">20dp</dimen>
+   <dimen name="width22">22dp</dimen>
+   <dimen name="width25">25dp</dimen>
+   <dimen name="width46">46dp</dimen>
+   <dimen name="width30">30dp</dimen>
+   <dimen name="width34">34dp</dimen>
+   <dimen name="width38">38dp</dimen>
+   <dimen name="width40">40dp</dimen>
+   <dimen name="width44">44dp</dimen>
+   <dimen name="width50">50dp</dimen>
+   <dimen name="width60">60dp</dimen>
+   <dimen name="width70">70dp</dimen>
+   <dimen name="width80">80dp</dimen>
+   <dimen name="width88">88dp</dimen>
+   <dimen name="width95">95dp</dimen>
+   <dimen name="width100">100dp</dimen>
+   <dimen name="width120">120dp</dimen>
+   <dimen name="width110">110dp</dimen>
+   <dimen name="width112">112dp</dimen>
+   <dimen name="width150">150dp</dimen>
+   <dimen name="width180">180dp</dimen>
+   <dimen name="width200">200dp</dimen>
+   <dimen name="width220">220dp</dimen>
+   <dimen name="width250">250dp</dimen>
+   <!-- 高度 -->
+   <dimen name="height05">0.5dp</dimen>
+   <dimen name="height1">1dp</dimen>
+   <dimen name="height2">2dp</dimen>
+   <dimen name="height4">4dp</dimen>
+   <dimen name="height5">5dp</dimen>
+   <dimen name="height10">10dp</dimen>
+   <dimen name="height14">14dp</dimen>
+   <dimen name="height15">15dp</dimen>
+   <dimen name="height20">20dp</dimen>
+   <dimen name="height21">21dp</dimen>
+   <dimen name="height18">18dp</dimen>
+   <dimen name="height30">30dp</dimen>
+   <dimen name="height35">35dp</dimen>
+   <dimen name="height40">40dp</dimen>
+   <dimen name="height45">45dp</dimen>
+   <dimen name="height48">48dp</dimen>
+   <dimen name="height60">60dp</dimen>
+   <dimen name="height64">64dp</dimen>
+   <dimen name="height65">65dp</dimen>
+   <dimen name="height66">66dp</dimen>
+   <dimen name="height70">70dp</dimen>
+   <dimen name="height80">80dp</dimen>
+   <dimen name="height100">100dp</dimen>
+   <dimen name="height110">110dp</dimen>
+   <dimen name="height120">120dp</dimen>
+   <dimen name="height150">150dp</dimen>
+   <dimen name="height170">170dp</dimen>
+   <dimen name="height180">180dp</dimen>
+   
+   
+   <!-- 上边距 -->
+   <dimen name="mTop5">5dp</dimen>
+   <dimen name="mTop10">10dp</dimen>
+   <dimen name="mTop13">13dp</dimen>
+   <dimen name="mTop15">15dp</dimen>
+   <dimen name="mTop17">17dp</dimen>
+   <dimen name="mTop18">18dp</dimen>
+   <dimen name="mTop20">20dp</dimen>
+   <dimen name="mTop24">24dp</dimen>
+   <dimen name="mTop30">30dp</dimen>
+   <dimen name="mTop32">32dp</dimen>
+   <dimen name="mTop40">40dp</dimen>
+   <dimen name="mTop42">42dp</dimen>
+   <dimen name="mTop50">50dp</dimen>
+   <dimen name="mTop51">51dp</dimen>
+   <dimen name="mTop60">60dp</dimen>
+   <dimen name="mTop90">90dp</dimen>
+   <dimen name="mTop120">120dp</dimen>
+   
+   <!-- 左边距 -->
+   <dimen name="mLeft1">1dp</dimen>
+   <dimen name="mLeft2">2dp</dimen>
+   <dimen name="mLeft5">5dp</dimen>
+   <dimen name="mLeft6">6dp</dimen>
+   <dimen name="mLeft7">7dp</dimen>
+   <dimen name="mLeft8">8dp</dimen>
+   <dimen name="mLeft10">10dp</dimen>
+   <dimen name="mLeft12">12dp</dimen>
+   <dimen name="mLeft15">15dp</dimen>
+   <dimen name="mLeft18">18dp</dimen>
+   <dimen name="mLeft20">20dp</dimen>
+   <dimen name="mLeft24">24dp</dimen>
+   <dimen name="mLeft25">25dp</dimen>
+   <dimen name="mLeft26">26dp</dimen>
+   <dimen name="mLeft30">30dp</dimen>
+   <dimen name="mLeft40">40dp</dimen>
+   <dimen name="mLeft37">37dp</dimen>
+   <dimen name="mLeft45">45dp</dimen>
+   <dimen name="mLeft80">80dp</dimen>
+   <dimen name="mLeft90">90dp</dimen>
+   
+   <!-- 右边距 -->
+   <dimen name="mRight2">2dp</dimen>
+   <dimen name="mRight5">5dp</dimen>
+   <dimen name="mRight10">10dp</dimen>
+   <dimen name="mRight19">19dp</dimen>
+   <dimen name="mRight20">20dp</dimen>
+   <dimen name="mRight40">40dp</dimen>
+   <dimen name="mRight37">37dp</dimen>
+   <dimen name="mRight45">45dp</dimen>
+   <dimen name="mRight30">30dp</dimen>
+
+   <!--下边距-->
+   <dimen name="mBottom5">5dp</dimen>
+   <dimen name="mBottom18">18dp</dimen>
+   <dimen name="mBottom10">10dp</dimen>
+   <dimen name="mBottom20">20dp</dimen>
+   <dimen name="mBottom30">30dp</dimen>
+   <dimen name="mBottom40">40dp</dimen>
+   
+   <!-- 字体大小 -->
+   <dimen name="tSize10">10sp</dimen>
+   <dimen name="tSize12">12sp</dimen>
+   <dimen name="tSize13">13sp</dimen>
+   <dimen name="tSize14">14sp</dimen>
+   <dimen name="tSize15">15sp</dimen>
+   <dimen name="tSize16">16sp</dimen>
+   <dimen name="tSize18">18sp</dimen>
+   <dimen name="tSize19">19sp</dimen>
+   <dimen name="tSize20">20sp</dimen>
+   <dimen name="tSize22">22sp</dimen>
+   <dimen name="tSize25">25sp</dimen>
+   <dimen name="tSize30">30sp</dimen>
+   <dimen name="tSize35">35sp</dimen>
+   <dimen name="tSize40">40sp</dimen>
+</resources>

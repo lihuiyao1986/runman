@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30"
+    android:orientation="vertical" >
+
+  	<!-- 导航栏 begin -->
+    <include 
+	    android:id="@+id/top_title" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/shape_blue_btn"
+	    layout="@layout/top_all_activity" />
+    <!-- 导航栏 end -->
+    
+    <!-- 选项卡 begin -->
+    <LinearLayout
+        android:id="@+id/offline_pay_confirm_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height40"
+        android:layout_below="@id/top_title"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/cash_pay_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="现金支付"
+            android:textColor="@color/blue_bg"
+            android:textSize="@dimen/tSize20" />
+        <View
+            android:layout_width="@dimen/width05"
+            android:layout_height="fill_parent"
+            android:background="@color/color_29" />
+
+        <Button
+            android:id="@+id/voucher_pay_btn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="体验券"
+            android:textColor="@color/color_29"
+            android:textSize="@dimen/tSize20" />
+    </LinearLayout>
+    <!-- 选项卡 end -->
+    
+    <!-- 分割线 begin -->
+    <View
+        android:id="@+id/offline_pay_confirm_seperator_1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width05"
+        android:layout_below="@id/offline_pay_confirm_tabs"
+        android:background="@color/color_29" />
+    <!-- 分割线 end -->
+    
+    <!-- 表单区域 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offline_pay_confirm_seperator_1"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <!-- 现金支付对应的表单区域 begin -->
+        <LinearLayout
+            android:id="@+id/cash_pay_form_zone_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <!-- 说明 begin -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/height10"
+                android:paddingLeft="@dimen/width18"
+                android:paddingRight="@dimen/width18"
+                android:paddingTop="@dimen/height10"
+                android:text="如果车主已付款给你，请点击下面按钮确认。"
+                android:textColor="@color/color_15"
+                android:textSize="@dimen/tSize20"
+                />
+            <!-- 说明 end -->
+            
+            <!-- 分割线 begin -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top" >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/width05"
+                    android:layout_weight="1"
+                    android:background="@color/color_29" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/triangle" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/width05"
+                    android:layout_weight="1"
+                    android:background="@color/color_29" />
+            </LinearLayout>
+            <!-- 分割线 end -->
+            
+            <!-- 按钮加提示 begin -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <!-- 确认按钮 -->
+                <Button
+                    android:id="@+id/cash_pay_commit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/width30"
+                    android:layout_marginRight="@dimen/width30"
+                    android:layout_marginTop="@dimen/height10"
+                    android:background="@drawable/shape_blue_btn"
+                    android:paddingLeft="@dimen/width18"
+                    android:paddingRight="@dimen/width18"
+                    android:text="我已拿到洗车费用"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tSize20" />
+                <!-- 温馨提示 -->
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/width10"
+                    android:paddingLeft="@dimen/width10"
+                    android:paddingRight="@dimen/width10"
+                    android:paddingTop="@dimen/width10"
+                    android:textSize="@dimen/tSize12"
+                    android:text="温馨提示：用户选择现金当面支付，请记得向用户收取洗车费用。"
+                    android:textColor="@color/color_19" />
+            </LinearLayout>
+            <!-- 按钮加提示 end -->
+        </LinearLayout>
+        <!-- 现金支付对应的表单区域 end -->
+        
+        <!-- 体验券表单区域 begin -->
+        <LinearLayout
+            android:id="@+id/voucher_form_zone_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical" >
+            <!-- 说明 begin -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/height10"
+                android:paddingLeft="@dimen/width18"
+                android:paddingRight="@dimen/width18"
+                android:paddingTop="@dimen/height10"
+                android:text="选择洗车体验券，免费为用户洗车，培养用户忠诚度。"
+                android:textColor="@color/color_15"
+                android:textSize="@dimen/tSize20"
+                android:textStyle="normal"
+                android:typeface="monospace" />
+            <!-- 说明 end -->
+
+            <!-- 分割线 begin -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/width05"
+                    android:layout_weight="1"
+                    android:background="@color/color_29" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/triangle" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/width05"
+                    android:layout_weight="1"
+                    android:background="@color/color_29" />
+            </LinearLayout>
+            <!-- 分割线 end -->
+
+            <!-- 按钮加提示 begin -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <!-- 确认按钮 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width30"
+                    android:paddingBottom="@dimen/width10"
+                    android:text="体验券"
+                    android:textColor="@color/color_15"
+                    android:textSize="@dimen/tSize15" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width30"
+                    android:layout_marginRight="@dimen/width30"
+                    android:id="@+id/offline_pay_confirm_voucher_bg_ll"
+                    android:background="@drawable/voucher_bg_selector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="免费体验券"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tSize16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/width10"
+                            android:paddingTop="@dimen/width10"
+                            android:text="券码:"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tSize16" />
+                        <TextView
+                            android:id="@+id/voucher_number_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/width10"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/width10"
+                            android:paddingTop="@dimen/width10"
+                            android:text="--"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tSize15" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/use_voucher_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/width10"
+                    android:layout_marginLeft="@dimen/width30"
+                    android:layout_marginRight="@dimen/width30"
+                    android:layout_marginTop="@dimen/height21"
+                    android:background="@drawable/shape_blue_btn"
+                    android:paddingLeft="@dimen/width20"
+                    android:paddingRight="@dimen/width20"
+                    android:text="立即使用"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tSize20" />
+            </LinearLayout>
+            <!-- 按钮加提示 end -->
+        </LinearLayout>
+        <!-- 体验券表单区域 end -->
+    </LinearLayout>
+    <!-- 表单区域 end -->
+
+</RelativeLayout>

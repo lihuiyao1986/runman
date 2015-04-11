@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30"
+    android:orientation="vertical" >
+    <!-- 导航栏 -->
+    <RelativeLayout
+        android:id="@+id/nav_bar_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/nav_bar_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/order_income_query_nav_bar_left_btn"
+            android:layout_width="@dimen/width50"
+            android:paddingLeft="@dimen/width18"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:drawableLeft="@drawable/go_back_icon" />
+       <View
+            android:layout_width="@dimen/width50"
+            android:layout_height="fill_parent"
+            android:id="@+id/order_income_query_nav_bar_right_btn"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/order_income_query_nav_bar_left_btn"
+            android:layout_toLeftOf="@id/order_income_query_nav_bar_right_btn"
+            android:text="订单收入统计"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tSize20" />
+    </RelativeLayout>
+    <!-- 导航栏 end -->
+    <!-- 条件区域 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:id="@+id/income_query_left_btn"
+            android:paddingRight="@dimen/width25"
+            android:drawableRight="@drawable/left_triangle"
+            android:paddingBottom="@dimen/width20"
+            android:paddingTop="@dimen/width20" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/width20"
+            android:paddingTop="@dimen/width20"
+            android:id="@+id/income_query_date"
+            android:text="2015年3月"
+            android:textColor="@color/color_14"
+            android:textSize="@dimen/tSize20" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@null"
+            android:id="@+id/income_query_right_btn"
+            android:paddingLeft="@dimen/width25"
+            android:drawableLeft="@drawable/right_triangle"
+            android:paddingBottom="@dimen/width20"
+            android:paddingTop="@dimen/width20" />
+    </LinearLayout>
+    <!-- 条件区域 end -->
+    <!-- 汇总信息 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/income_query_header_view_ll"
+        android:layout_height="@dimen/width60"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="总计洗车"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="--"
+                android:id="@+id/income_query_total_ordernum_tv"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/tSize20" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="单"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="收入"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="--"
+                android:id="@+id/income_query_total_ordersum_tv"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/tSize20" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="元"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 汇总信息 end -->
+    <!-- 分割线 begin -->
+    <View 
+        android:layout_height="@dimen/width05"
+        android:layout_width ="fill_parent"
+        android:background="@color/color_32"
+        />
+    <!-- 分割线 end -->
+    <!-- 集合列表 begin -->
+    <ListView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/color_32"
+        android:dividerHeight="@dimen/width05"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:background="@color/white"
+        android:id="@+id/income_query_list_view"
+        />
+    <!-- 集合列表 end -->
+    <!-- emptyview begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:id="@+id/income_query_list_empty_view"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/income_query_no_order_icon"
+            />
+   </LinearLayout>
+   <!-- emptyview end -->
+</LinearLayout>

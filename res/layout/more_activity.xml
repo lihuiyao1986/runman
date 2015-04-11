@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_41"
+    android:orientation="vertical" >
+
+    <!-- 导航栏 -->
+
+    <RelativeLayout
+        android:id="@+id/nav_bar_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height64"
+        android:background="@drawable/nav_bar_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/more_nav_bar_left_btn"
+            android:layout_width="@dimen/width50"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableLeft="@drawable/go_back_icon"
+            android:paddingLeft="@dimen/width18" />
+
+        <View
+            android:id="@+id/more_nav_bar_right_btn"
+            android:layout_width="@dimen/width50"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/more_nav_bar_right_btn"
+            android:layout_toRightOf="@id/more_nav_bar_left_btn"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tSize20" />
+    </RelativeLayout>
+    <!-- 导航栏 end -->
+
+    <TextView
+        android:id="@+id/more_service_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height60"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/more_text_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/mLeft12"
+        android:text="客服400电话"
+        android:textColor="@color/color_15"
+        android:textSize="@dimen/tSize18" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height05"
+        android:background="@color/more_item_line" />
+
+    <RelativeLayout
+        android:id="@+id/more_check_version_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height60"
+        android:background="@drawable/more_text_bg_selector"
+        android:clickable="true"
+        android:paddingLeft="@dimen/mLeft12"
+        android:paddingRight="@dimen/mLeft12" >
+
+        <TextView
+            android:id="@+id/more_check_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/mLeft12"
+            android:gravity="center"
+            android:text="检查更新"
+            android:textColor="@color/color_15"
+            android:textSize="@dimen/tSize18" />
+
+        <TextView
+            android:id="@+id/more_check_version_isnew_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/more_check_version_tv"
+            android:text="已是最新"
+            android:textColor="@color/more_version_new_font_color"
+            android:textSize="@dimen/tSize13"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/more_check_version_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/more_version_new_font_color"
+            android:textSize="@dimen/tSize13"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/more_check_version_found_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/more_version_found_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height05"
+        android:background="@color/more_item_line" />
+
+    <TextView
+        android:id="@+id/more_exit_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height60"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/mTop60"
+        android:background="@drawable/more_text_bg_selector"
+        android:gravity="center"
+        android:text="退出"
+        android:textColor="@color/more_exit_font_color"
+        android:textSize="@dimen/tSize20" />
+
+</LinearLayout>

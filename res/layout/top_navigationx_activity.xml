@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height64"
+    android:background="@drawable/nav_bar_bg_selector"
+    android:gravity="center_vertical" >
+    <LinearLayout
+        android:id="@+id/navi_bar_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <!-- 左边按钮 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/left_btn_ll"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/top_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/mLeft10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+        
+        <!-- 中间标题 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/top_title_center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+        
+        <!-- 右边按钮 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/right_btn_ll"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/top_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_marginRight="@dimen/mRight10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30"
+    >
+   	<!-- 头部区域 -->
+	   <RelativeLayout
+	        android:id="@+id/nav_bar_top_ll"
+	        android:layout_width="fill_parent"
+	        android:layout_height="64dp"
+	        android:background="@drawable/nav_bar_bg_selector"
+	        android:gravity="center_vertical" >
+	
+	        <!-- 左侧 begin -->
+	        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/nav_bar_bg_selector"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:layout_height="wrap_content" 
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="@dimen/mLeft10"
+	            android:text="今日洗车"
+	            android:textColor="@color/color_8"
+	            android:textSize="@dimen/tSize18" />
+	        <TextView 
+	            android:id ="@+id/order_receive_ordernum_tv"
+	            android:layout_height="wrap_content" 
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="@dimen/mLeft2"
+	            android:layout_marginRight="@dimen/mRight2"
+	            android:text="0"
+	            android:textColor="@color/btn_background"
+	            android:textSize="@dimen/tSize18" />
+	       <TextView
+	            android:layout_height="wrap_content" 
+	            android:layout_width="wrap_content"
+	            android:text="单"
+	            android:textColor="@color/color_8"
+	            android:textSize="@dimen/tSize18" />
+	    </LinearLayout>
+        <!-- 左侧 end -->
+        <!-- 右边 begin -->
+
+        <LinearLayout
+            android:id="@+id/index_page_nav_right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mRight20"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/rob_page_query_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="@dimen/width10"
+                android:paddingBottom="@dimen/width10"
+                android:paddingLeft="@dimen/width10"
+                android:paddingRight="@dimen/width10"
+                android:drawableTop="@drawable/index_page_order_check_btn"
+                android:text="订单"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize10" />
+        </LinearLayout>
+        <!-- 右边 end -->
+    </RelativeLayout>
+    
+    <!-- 下班按钮 begin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height100"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/order_receive_offwork_btn_ll"
+        android:orientation="vertical" >
+ 
+			  <Button
+			    android:id="@+id/order_receive_offwork_btn"
+				android:layout_width="@dimen/width80" 
+				android:layout_height="@dimen/height80"
+				android:layout_margin="@dimen/mLeft5"
+				android:textSize="@dimen/tSize20"
+				android:text="下班"
+				android:textColor="@color/color_11"
+				android:background="@drawable/offline_btn_selector" />
+	</LinearLayout> 
+    <!-- 下班按钮 end -->
+
+	<!-- 选项卡 begin -->
+	<LinearLayout
+        android:id="@+id/tab_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width44"
+        android:orientation="horizontal"
+        android:layout_below="@id/nav_bar_top_ll"
+        android:background="@null">
+			<Button
+	            android:id="@+id/tab_rob_order_btn"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_horizontal"
+	            android:textColor="@color/color_18"
+	            android:textSize="@dimen/tSize20"
+	            android:background="@null"
+	            android:text="抢单" />
+			<View
+	            android:layout_width="0.5dp"
+	            android:layout_height="match_parent"
+	            android:background="@color/color_36"/>
+	        <Button
+	            android:id="@+id/tab_robbed_order_btn"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_horizontal"
+	            android:gravity="center"
+	            android:textSize="@dimen/tSize20"
+	            android:textColor="@color/gray"
+	            android:background="@null"
+	            android:text="已抢单" />
+    </LinearLayout>
+	<!-- 选项卡end -->
+	
+	<!-- 分割线begin -->
+	<LinearLayout
+        android:id="@+id/view_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height4"
+        android:orientation="horizontal"
+        android:layout_below="@id/tab_line_layout"
+        android:background="@null">
+			<View
+	            android:id="@+id/rob_order_view"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@color/color_18"/>
+	       
+			<View
+	            android:id="@+id/robbed_order_view"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@color/gray"/>
+			
+    </LinearLayout>
+	<!-- 分割线end -->
+	
+	<!-- 订单区域 begin -->
+	<FrameLayout 
+	    android:id="@+id/order_fragment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/order_receive_offwork_btn_ll"
+        android:layout_below="@id/view_line_layout"
+         >
+        
+	</FrameLayout>
+	<!-- 订单区域 end -->
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:background="@drawable/toast_dialog_bg_selector"
+        android:layout_height="@dimen/height180"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/mLeft20"
+        android:layout_marginRight="@dimen/mRight20"
+        >
+        <!-- 标题 begin -->
+        <TextView
+            android:id="@+id/toast_view_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/mTop15"
+            android:paddingTop="@dimen/mTop15"
+            android:text="完成订单"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/tSize25" />
+        <!-- 标题 end -->
+        
+        <!-- 消息 begin -->
+        <TextView
+            android:id="@+id/toast_view_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:maxLines="4"
+            android:paddingBottom="@dimen/mBottom40"
+            android:singleLine="false"
+            android:text="辛苦了！洗车收入会存入您的账户"
+            android:textColor="@color/color_21"
+            android:textSize="@dimen/tSize16" />
+        <!-- 消息 end -->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width220"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 分割线 begin -->
+    <View
+        android:id="@+id/slidemenu_seperator_1"
+        android:layout_marginTop="@dimen/width120"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width05"
+        android:background="@color/color_38" />
+    <!-- 分割线 begin -->
+    
+    <!-- 菜单项列表 begin -->
+    <ListView
+        android:id="@+id/index_page_slidemenu_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slidemenu_seperator_1"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/color_38"
+        android:listSelector="#00000000"
+        android:dividerHeight="@dimen/width05"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+    <!-- 菜单项列表 end -->
+    <!-- 分割线 begin -->
+    <View
+        android:id="@+id/slidemenu_seperator_2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width05"
+        android:layout_below="@id/index_page_slidemenu_listview"
+        android:background="@color/color_38" />
+    <!-- 分割线 begin -->
+    <!-- 二维码 begin -->
+    <LinearLayout
+        android:id="@+id/index_page_slidemenu_weixin_code_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/index_page_slidemenu_weixin_code_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/width10"
+            android:layout_marginLeft="@dimen/width5"
+            android:layout_marginTop="@dimen/width10"
+            android:text="关注微信公众号,一键上门洗车!"
+            android:textColor="@color/color_37"
+            android:textSize="@dimen/tSize13" />
+    </LinearLayout>
+    <!-- 二维码 end -->
+
+</RelativeLayout>

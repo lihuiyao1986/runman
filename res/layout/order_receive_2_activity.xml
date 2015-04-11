@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30" >
+
+    <!-- 头部区域 -->
+    <RelativeLayout
+        android:id="@+id/nav_bar_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/nav_bar_bg_selector"
+        android:gravity="center_vertical" >
+
+        <!-- 左侧 begin -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_bar_bg_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft10"
+                android:text="今日洗车"
+                android:textColor="@color/color_8"
+                android:textSize="@dimen/tSize18" />
+
+            <TextView
+                android:id="@+id/order_receive_ordernum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft2"
+                android:layout_marginRight="@dimen/mRight2"
+                android:text="0"
+                android:textColor="@color/btn_background"
+                android:textSize="@dimen/tSize18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单"
+                android:textColor="@color/color_8"
+                android:textSize="@dimen/tSize18" />
+        </LinearLayout>
+        <!-- 左侧 end -->
+        <!-- 右边 begin -->
+        <LinearLayout
+            android:id="@+id/index_page_nav_right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mRight20"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/rob_page_query_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableTop="@drawable/index_page_order_check_btn"
+                android:paddingBottom="@dimen/width10"
+                android:paddingLeft="@dimen/width10"
+                android:paddingRight="@dimen/width10"
+                android:paddingTop="@dimen/width10"
+                android:text="订单"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize10" />
+        </LinearLayout>
+        <!-- 右边 end -->
+    </RelativeLayout>
+    <!-- 下班按钮 begin -->
+    <LinearLayout
+        android:id="@+id/order_receive_offwork_btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height100"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/order_receive_offwork_btn"
+            android:layout_width="@dimen/width80"
+            android:layout_height="@dimen/height80"
+            android:layout_margin="@dimen/mLeft5"
+            android:background="@drawable/offline_btn_selector"
+            android:text="下班"
+            android:textColor="@color/color_11"
+            android:textSize="@dimen/tSize20" />
+    </LinearLayout>
+    <!-- 下班按钮 end -->
+    
+    <!-- 指示器区域 begin -->
+    <com.clt.runman.widget.tabviewpager.TabPageIndicator
+        android:id="@+id/order_receive_indicator"
+        android:layout_below="@id/nav_bar_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width46"
+        android:layout_gravity="center_vertical"
+        android:background="@color/transparent_color" >
+    </com.clt.runman.widget.tabviewpager.TabPageIndicator>
+    <!-- 指示器区域 end -->
+    
+    <!-- fragmentViewPager区域 begin -->
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/order_receive_indicator"
+        android:layout_above="@id/order_receive_offwork_btn_ll"
+        android:id="@+id/order_receive_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         />
+   <!-- fragmentViewPager区域 end-->
+</RelativeLayout>

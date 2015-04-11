@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+   	<!-- 导航栏 begin -->
+    <include 
+	    android:id="@+id/top_title" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/shape_blue_btn"
+	    layout="@layout/top_all_activity" />
+    <!-- 导航栏 end -->
+    
+    <!-- 第一部分 begin -->
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical"
+        android:id="@+id/wash_car_after_activity_part_1"
+         >
+         <!-- 分割线1 begin -->
+         <View
+            android:id="@+id/seperator_one"
+            android:layout_width="@dimen/width1"
+            android:layout_height="@dimen/height20"
+            android:layout_marginLeft="@dimen/mLeft25"
+            android:background="@color/blue_bg"
+             />
+         <!-- 分割线1 end -->
+         <!-- 步骤提示信息 begin -->
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seperator_one"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mTop5"
+                android:layout_marginLeft="@dimen/mLeft18"
+                android:layout_marginTop="@dimen/mTop5"
+                android:contentDescription="@string/Image_Desc"
+                android:src="@drawable/step_enable_logo" />
+            <View
+                android:layout_width="@dimen/width18"
+                android:layout_height="@dimen/width1"
+                android:layout_marginLeft="@dimen/mLeft1"
+                android:background="@color/blue_bg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft1"
+                android:text="洗车后拍照"
+                android:textColor="@color/color_2"
+                android:textSize="@dimen/tSize16" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft10"
+                android:text="(4/4步)"
+                android:textColor="@color/color_19"
+                android:textSize="@dimen/tSize13" />
+       </LinearLayout>
+        <!-- 步骤提示信息 end -->
+    </RelativeLayout>
+    <!-- 第一部分 end -->
+    
+    <!-- 第二部分 begin -->
+    <RelativeLayout
+        android:id="@+id/wash_car_after_activity_part_2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/wash_car_after_activity_part_1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <!-- 分割线 begin -->
+        <View
+            android:layout_width="@dimen/width1"
+            android:layout_height="match_parent"
+            android:id="@+id/seperator_2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mLeft25"
+            android:background="@color/blue_bg" /> 
+        <!-- 分割线 end -->
+        
+        <RelativeLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/center_content_rl"
+            android:layout_alignLeft="@id/seperator_2"
+            android:paddingLeft ="@dimen/mLeft10">
+            
+            <!-- 图片区域一 begin -->
+               <LinearLayout
+                   android:id="@+id/image_layout_one"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/width10"
+                   android:orientation="vertical" >
+                   <HorizontalScrollView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/width10"
+                       android:fillViewport="true"
+                       android:scrollbars="none" >
+                       <LinearLayout
+                           android:layout_width="312dp"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal" >
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:id="@+id/washcar_after_1_0_0"
+                               android:layout_height="@dimen/width70"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:layout_height="@dimen/width70"
+                               android:id="@+id/washcar_after_1_0_1"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:layout_height="@dimen/width70"
+                               android:id="@+id/washcar_after_1_0_2"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+                       </LinearLayout>
+                   </HorizontalScrollView>
+              </LinearLayout>
+              <!-- 图片区域一 end -->
+              
+              <!-- 图片区域二 begin -->
+               <LinearLayout
+                   android:id="@+id/image_layout_two"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/width10"
+                   android:layout_below="@id/image_layout_one"
+                   android:orientation="vertical" >
+                   <HorizontalScrollView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/width10"
+                       android:fillViewport="true"
+                       android:scrollbars="none" >
+                       <LinearLayout
+                           android:layout_width="312dp"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal" >
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:id="@+id/washcar_after_1_0_3"
+                               android:layout_height="@dimen/width70"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:layout_height="@dimen/width70"
+                               android:id="@+id/washcar_after_1_0_4"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:layout_height="@dimen/width70"
+                               android:id="@+id/washcar_after_1_0_5"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+                       </LinearLayout>
+                   </HorizontalScrollView>
+              </LinearLayout>
+              <!-- 图片区域二 end -->
+              
+              <!-- 图片区域三 begin -->
+               <LinearLayout
+                   android:id="@+id/image_layout_three"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/width10"
+                   android:layout_below="@id/image_layout_two"
+                   android:orientation="vertical" >
+                   <HorizontalScrollView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/width10"
+                       android:fillViewport="true"
+                       android:scrollbars="none" >
+                       <LinearLayout
+                           android:layout_width="312dp"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal" >
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:id="@+id/washcar_after_1_0_6"
+                               android:layout_height="@dimen/width70"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:layout_height="@dimen/width70"
+                               android:id="@+id/washcar_after_1_0_7"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+
+                           <ImageButton
+                               android:layout_width="@dimen/width88"
+                               android:layout_height="@dimen/width70"
+                               android:id="@+id/washcar_after_1_0_8"
+                               android:layout_marginRight="@dimen/width10"
+                               android:background="@null"
+                               android:src="@drawable/take_pic_icon" />
+                       </LinearLayout>
+                   </HorizontalScrollView>
+              </LinearLayout>
+              <!-- 图片区域三 end -->
+            
+           <!-- 按钮  begin -->
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mBottom30"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/wash_car_after_finished_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mRight30"
+                    android:background="@drawable/shape_blue_btn"
+                    android:text="拍照完成"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tSize18" />
+	        </LinearLayout> 
+	        <!-- 按钮  end -->
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 第二部分 end -->
+</RelativeLayout>

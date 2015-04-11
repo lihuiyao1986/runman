@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+	<color name="gray">#A3B1D0</color>
+	<color name="dark_green">#006400</color>
+	<color name="black">#121212</color>
+	<color name="red">#CC0000</color>
+	<color name="blue_bg">#33abff</color>
+	<color name="color_1">#f7a446</color>
+	<color name="color_2">#1a1a1a</color>
+	<color name="color_3">#f39b36</color>
+	<color name="color_4">#6c6c6c</color>
+	<color name="color_5">#242424</color>
+	<color name="color_6">#939292</color>
+	<color name="color_7">#93d3ff</color>
+	<color name="color_8">#393939</color>
+	<color name="color_9">#191919</color>
+	<color name="color_10">#868686</color>
+	<color name="color_11">#545454</color>
+	<color name="color_12">#2780be</color>
+	<color name="color_13">#e7e8e9</color>
+	<color name="color_14">#323232</color>
+	<color name="color_15">#414141</color>
+	<color name="color_16">#4e4e4e</color>
+	<color name="color_17">#131313</color>
+	<color name="color_18">#33abff</color>
+	<color name="color_19">#757575</color>
+	<color name="color_20">#b2b2b2</color>
+	<color name="color_21">#4c4c4c</color>
+	<color name="color_22">#ededeb</color>
+	<color name="color_23">#787878</color>
+	<color name="color_24">#3ec8fd</color>
+	<color name="color_25">#f2a500</color>
+	<color name="color_26">#3a5291</color>
+	<color name="color_27">#4986d7</color>
+	<color name="color_28">#4675b3</color>
+	<color name="color_29">#c5c3c3</color>
+	<color name="color_30">#edf0f2</color>
+	<color name="color_31">#979797</color>
+	<color name="color_32">#dddcdc</color>
+	<color name="color_33">#f8732a</color>
+	<color name="color_34">#424242</color>
+	<color name="color_35">#ebebeb</color>
+	<color name="color_36">#c5c3c4</color>
+	<color name="color_37">#666666</color>
+	<color name="color_38">#e3e2e2</color>
+	<color name="color_39">#faaf38</color>
+	<color name="color_40">#f6f6f6</color>
+	<color name="color_41">#f2f2f2</color>
+	<color name="color_42">#999999</color>
+	<color name="color_43">#d53838</color>
+	<color name="transparent_color">#00000000</color>
+	<!-- 登录页字体颜色 -->
+   <color name="login_font_color">#66aad9</color>
+   <color name="hint_font_color">#dddddd</color>
+   <color name="btn_background">#33abff</color>
+   <color name="guide_font_color">#f86567</color>
+   
+   <!-- 首页 -->
+   <color name="index_important_info">#6bacda</color>
+   <color name="index_important_info_background">#e0e0e0</color>
+   
+   <!-- 洗车流程，下一步标题提示 -->
+   <color name="orderflow_gray">#b5b5b5</color>
+   
+   <!-- 更多分割线颜色 -->
+   <color name="more_item_line">#e3e3e3</color>
+   <color name="more_exit_font_color">#db4949</color>
+   <color name="more_font_pressed_color">#e8e8e8</color>
+   <color name="more_version_new_font_color">#999999</color>
+</resources>

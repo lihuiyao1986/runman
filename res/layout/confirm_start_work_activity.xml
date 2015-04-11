@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30" >
+    <!-- 导航栏 -->
+    <RelativeLayout
+        android:id="@+id/confirm_start_work_nav_bar_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/nav_bar_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/confirm_start_work_nav_bar_left_btn"
+            android:layout_width="@dimen/width80"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:drawableLeft="@drawable/go_back_icon"
+            android:paddingLeft="@dimen/width20" />
+        <Button
+            android:id="@+id/confirm_start_work_nav_bar_right_btn"
+            android:layout_width="@dimen/width80"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:drawableRight="@drawable/top_customer"
+            android:paddingRight="@dimen/width20" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/confirm_start_work_nav_bar_right_btn"
+            android:layout_toRightOf="@id/confirm_start_work_nav_bar_left_btn"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约订单"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 导航栏 end -->
+    <!-- scrollview begin -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/confirm_start_work_nav_bar_top_ll"
+        android:scrollbars="none" >
+        <!-- 显示订单信息的区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            <!-- 接单按钮 end -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/width20"
+                android:orientation="vertical" >
+                <!-- 车牌 begin -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/width10"
+                    android:paddingBottom="@dimen/width10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/width10"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="车牌号"
+                        android:textColor="@color/color_4"
+                        android:textSize="@dimen/tSize20" />
+                    <TextView
+                        android:id="@+id/confirm_start_work_car_number_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:text="--"
+                        android:textColor="@color/color_5"
+                        android:textSize="@dimen/tSize20" />
+                </LinearLayout>
+                <!-- 车牌 end -->
+                <!-- 停车点 begin -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/width10"
+                    android:paddingBottom="@dimen/width10"
+                    android:paddingLeft="@dimen/width10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="停车点"
+                        android:textColor="@color/color_4"
+                        android:textSize="@dimen/tSize20" />
+                    <TextView
+                        android:id="@+id/confirm_start_work_car_position_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:maxLines="3"
+                        android:singleLine="false"
+                        android:text="--"
+                        android:textColor="@color/color_5"
+                        android:textSize="@dimen/tSize20" />
+                </LinearLayout>
+                <!-- 停车点 end -->
+                <!-- 预约时间 begin -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/width10"
+                    android:paddingBottom="@dimen/width10"
+                    android:paddingLeft="@dimen/width10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="left"
+                        android:text="预约时间"
+                        android:textColor="@color/color_4"
+                        android:textSize="@dimen/tSize20" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:id="@+id/confirm_start_work_order_time_tv"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="4"
+                        android:maxLines="3"
+                        android:singleLine="false"
+                        android:text="--"
+                        android:textColor="@color/color_5"
+                        android:textSize="@dimen/tSize20" />
+                </LinearLayout>
+                <!-- 停车点 end -->
+                <Button
+                    android:id="@+id/confirm_start_work_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height100"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/mLeft45"
+                    android:layout_marginRight="@dimen/mRight45"
+                    android:layout_marginTop="@dimen/width20"
+                    android:background="@drawable/shape_blue_btn"
+                    android:text="确认赶往"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tSize40" />
+                <TextView 
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:text="温馨提示：确认赶往之前请联系车主"
+                    android:textSize="@dimen/tSize12"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/width10"
+                    android:paddingBottom="@dimen/width10"
+                    android:textColor="@color/color_19"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height05"
+                    android:background="@drawable/shadow_horiz_selector" >
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- scrollview end -->
+</RelativeLayout>

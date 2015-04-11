@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <style name="AppBaseTheme" parent="android:Theme.Light"></style> -->
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+    <!-- 圆形视图 -->
+    <declare-styleable name="RingView">
+        <attr name="bgColor" format="color" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <style name="TabPageTheme" parent="AppBaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/TabPageWidget.TabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TabPageWidget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi_tab_indicator</item>
+        <item name="android:paddingLeft">@dimen/width22</item>
+        <item name="android:paddingRight">@dimen/width22</item>
+        <item name="android:paddingTop">@dimen/width8</item>
+        <item name="android:paddingBottom">@dimen/width8</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">@dimen/tSize16</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textSize">@dimen/tSize20</item>
+        <item name="android:textColor">@drawable/tab_view_page_textview_selector</item>
+    </style>
+
+</resources>

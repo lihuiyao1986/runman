@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/slidemenu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width20"
+            android:scaleType="fitCenter"
+            android:src="@drawable/slide_menu_acct_icon" />
+
+        <TextView
+            android:id="@+id/slidemenu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width15"
+            android:text="洗车账户"
+            android:textColor="@color/color_37"
+            android:textSize="@dimen/tSize16" />
+
+        <TextView
+            android:id="@+id/slidemenu_extra_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width15"
+            android:text=""
+            android:textColor="@color/color_39"
+            android:textSize="@dimen/tSize16"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

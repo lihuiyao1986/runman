@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/color_30"
+    >
+    <!-- 导航栏 begin -->
+    <!-- 头部区域 -->
+    <RelativeLayout
+        android:id="@+id/nav_bar_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/nav_bar_bg_selector"
+        android:gravity="center_vertical" >
+        <!-- 左侧 begin -->
+        <LinearLayout
+            android:id="@+id/index_page_nav_left_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/index_page_nav_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/mLeft15"
+                android:paddingRight="@dimen/mLeft15"
+                android:background="@null"
+                android:drawableLeft="@drawable/index_page_nav_left_btn" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日洗车"
+                android:textColor="@color/color_8"
+                android:textSize="@dimen/tSize20" />
+            <TextView
+                android:id="@+id/index_page_income_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft2"
+                android:layout_marginRight="@dimen/mRight2"
+                android:text="0"
+                android:textColor="@color/btn_background"
+                android:textSize="@dimen/tSize20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单"
+                android:textColor="@color/color_8"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+        <!-- 左侧 end -->
+        <!-- 右边 begin -->
+        <LinearLayout
+            android:id="@+id/index_page_nav_right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mRight10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/index_page_query_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="@dimen/width10"
+                android:paddingBottom="@dimen/width10"
+                android:paddingLeft="@dimen/width10"
+                android:paddingRight="@dimen/width10"
+                android:drawableTop="@drawable/index_page_order_check_btn"
+                android:text="订单"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize10" />
+            
+             <Button
+                android:id="@+id/index_page_message_list_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="@dimen/width10"
+                android:paddingBottom="@dimen/width10"
+                android:paddingLeft="@dimen/width10"
+                android:paddingRight="@dimen/width10"
+                android:drawableTop="@drawable/index_page_message_list_btn"
+                android:text="消息"
+                android:textColor="@color/color_14"
+                android:textSize="@dimen/tSize10" />
+        </LinearLayout>
+        <!-- 右边 end -->
+    </RelativeLayout>
+    <!-- 导航栏 end -->
+
+    <!-- 跑男信息 begin -->
+    <LinearLayout
+        android:id="@+id/runmanInfo"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height70"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <!-- 左边 begin -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:baselineAligned="false"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2" >
+            <!-- 头像 begin -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/header_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mLeft10"
+                    android:contentDescription="@string/Image_Desc"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+            <!-- 头像 end -->
+            <!-- 姓名信息 begin -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5" >
+
+                <TextView
+                    android:id="@+id/rm_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height35"
+                    android:gravity="center_horizontal|bottom"
+                    android:text=""
+                    android:textColor="@color/color_14"
+                    android:textSize="@dimen/tSize16" />
+
+                <TextView
+                    android:id="@+id/rm_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height35"
+                    android:layout_below="@id/rm_name"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_15"
+                    android:textSize="@dimen/tSize13" />
+            </RelativeLayout>
+            <!-- 姓名信息 end -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <View
+                    android:layout_width="@dimen/width05"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mBottom10"
+                    android:layout_marginTop="@dimen/mTop10"
+                    android:background="@color/color_13" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 左边 end -->
+        <!-- 右边 begin -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" >
+
+            <LinearLayout
+                android:id="@+id/index_page_order_number_pre_month_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height35"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月洗车"
+                    android:textColor="@color/color_15"
+                    android:textSize="@dimen/tSize16" />
+
+                <TextView
+                    android:id="@+id/index_page_current_month_ordernum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mLeft2"
+                    android:layout_marginRight="@dimen/mRight2"
+                    android:text="0"
+                    android:textColor="@color/btn_background"
+                    android:textSize="@dimen/tSize16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单"
+                    android:textColor="@color/color_15"
+                    android:textSize="@dimen/tSize16" />
+            </LinearLayout>
+            <!-- 跑男收入 begin -->
+
+            <LinearLayout
+                android:id="@+id/index_page_total_income_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height35"
+                android:layout_below="@id/index_page_order_number_pre_month_ll"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已收入"
+                    android:textColor="@color/color_15"
+                    android:textSize="@dimen/tSize13" />
+
+                <TextView
+                    android:id="@+id/index_page_current_month_ordersum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mLeft2"
+                    android:layout_marginRight="@dimen/mRight2"
+                    android:text="0"
+                    android:textColor="@color/btn_background"
+                    android:textSize="@dimen/tSize13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/color_15"
+                    android:textSize="@dimen/tSize13" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 右边 end -->
+    </LinearLayout>
+    <!-- 跑男信息 end -->
+
+    <!-- 底部部分 begin -->
+    <RelativeLayout
+        android:id="@+id/index_page_center_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height20" >
+        <!-- 上班按钮 begin -->
+        <LinearLayout
+            android:id="@+id/go_work_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mLeft5"
+                android:background="@drawable/shape_blue_btn"
+                android:onClick="workClick"
+                android:text="上班"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+        <!-- 上班按钮 end -->
+        <!-- 天气 begin -->
+        <LinearLayout
+            android:id="@+id/index_page_weather_zone_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            <!-- 天气标题 -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/width15"
+                android:layout_marginBottom="@dimen/width10"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/weather_city_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/width22"
+                    android:text="杭州"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_34"
+                    android:textSize="@dimen/tSize18" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+                    <TextView 
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="今日洗车指数"
+                        android:textColor="@color/color_34"
+                        android:textSize="@dimen/tSize15"
+                        />
+                    <TextView
+                        android:id="@+id/index_page_washcar_tip_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/width18"
+                        android:paddingLeft="@dimen/width10"
+                        android:gravity="center"
+                        android:text="适宜"
+                        android:textColor="@color/color_33" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 展示天气对应的gridview -->
+            <GridView
+                android:id="@+id/index_page_weather_items"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="@dimen/width110"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/width1"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/width1" />
+        </LinearLayout>
+        <!-- 天气 end -->
+    </RelativeLayout>
+    <!-- 底部部分 end -->
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30" >
+
+    <!-- 导航栏 -->
+
+    <RelativeLayout
+        android:id="@+id/order_detail_nav_bar_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/nav_bar_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/order_detail_nav_bar_left_btn"
+            android:layout_width="@dimen/width50"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:drawableLeft="@drawable/go_back_icon"
+            android:paddingLeft="@dimen/width18" />
+
+        <View
+            android:id="@+id/order_detail_nav_bar_right_btn"
+            android:layout_width="@dimen/width50"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/order_detail_nav_bar_right_btn"
+            android:layout_toRightOf="@id/order_detail_nav_bar_left_btn"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单详情"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tSize20" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 导航栏 end -->
+    <!-- scrollview begin -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/order_detail_nav_bar_top_ll"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 到账时间 begin -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/width5"
+                    android:paddingTop="@dimen/width5"
+                    android:text="已到账"
+                    android:id="@+id/order_detail_order_status_tv"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/tSize15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/width5"
+                    android:text="2015-03-15 14:20"
+                    android:id="@+id/order_detail_order_confirm_time_tv"
+                    android:textColor="@color/color_31"
+                    android:textSize="@dimen/tSize15" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/width05"
+                    android:background="@color/color_32" />
+            </LinearLayout>
+            <!-- 到账时间 end -->
+            <!-- 订单信息 begin -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height10"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/width05"
+                    android:background="@color/color_32" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/width5"
+                    android:paddingTop="@dimen/width10" >
+
+                    <TextView
+                        android:layout_width="@dimen/width80"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="车主"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/tSize15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="130********"
+                        android:id="@+id/order_detail_car_owner_phone_tv"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/width5"
+                    android:paddingTop="@dimen/width5" >
+
+                    <TextView
+                        android:layout_width="@dimen/width80"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="下单时间"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/tSize15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="2015-03-15 14:30"
+                        android:id="@+id/order_detail_order_time_tv"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/width5"
+                    android:paddingTop="@dimen/width5" >
+
+                    <TextView
+                        android:layout_width="@dimen/width80"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="车牌号"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/tSize15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="浙A5555555"
+                        android:id="@+id/order_detail_carnum_tv"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/width5"
+                    android:paddingTop="@dimen/width5" >
+
+                    <TextView
+                        android:layout_width="@dimen/width80"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="停车点"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/tSize15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="三顿亲亲家园"
+                        android:id="@+id/order_detail_car_posi_tv"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/width10"
+                    android:paddingTop="@dimen/width5" >
+
+                    <TextView
+                        android:layout_width="@dimen/width80"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="支付方式"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/tSize15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="微信支付"
+                        android:id="@+id/order_detail_payway_tv"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width15"
+                        android:text="28元"
+                        android:id="@+id/order_detail_order_sum_tv"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/width05"
+                    android:background="@color/color_32" />
+            </LinearLayout>
+            <!-- 订单信息 end -->
+
+
+            <!-- 照片信息 begin -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_detail_washcar_pre_pic_ll"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/width05"
+                        android:background="@color/color_32" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/height10"
+                        android:paddingLeft="@dimen/width15"
+                        android:paddingTop="@dimen/height10"
+                        android:text="洗车照片"
+                        android:textColor="@color/color_31"
+                        android:textSize="@dimen/tSize20" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/width05"
+                        android:background="@color/color_32" />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/check_pic_bg_selector"
+                        android:drawableRight="@drawable/triangle_2"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="@dimen/width20"
+                        android:paddingLeft="@dimen/width15"
+                        android:paddingRight="@dimen/width30"
+                        android:paddingTop="@dimen/width20"
+                        android:id="@+id/order_detail_washcar_pre_pic_btn"
+                        android:text="洗车前照片"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/width05"
+                        android:background="@color/color_32" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/triangle_2"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="@dimen/width20"
+                        android:paddingLeft="@dimen/width15"
+                        android:paddingRight="@dimen/width30"
+                        android:paddingTop="@dimen/width20"
+                        android:text="洗车后照片"
+                        android:background="@drawable/check_pic_bg_selector"
+                        android:id="@+id/order_detail_washcar_after_pic_btn"
+                        android:textColor="@color/color_14"
+                        android:textSize="@dimen/tSize15" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/width05"
+                        android:background="@color/color_32" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 照片信息 end -->
+        </LinearLayout>
+    </ScrollView>
+    <!-- scrollview end -->
+
+</RelativeLayout>

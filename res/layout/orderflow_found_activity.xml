@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <!-- 头部导航 begin -->
+    <include
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_all_activity"
+        android:background="@drawable/shape_blue_btn" />
+    <!-- 头部导航 end -->
+    
+    <!-- 第一部分 begin -->
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical"
+        android:id="@+id/found_activity_part_1"
+         >
+         <!-- 分割线1 begin -->
+         <View
+            android:id="@+id/seperator_one"
+            android:layout_width="@dimen/width1"
+            android:layout_height="@dimen/height20"
+            android:layout_marginLeft="@dimen/mLeft25"
+            android:background="@color/blue_bg" />
+         <!-- 分割线1 end -->
+         <!-- 步骤提示信息 begin -->
+         <LinearLayout
+            android:id="@+id/found_activity_part_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seperator_one"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mTop5"
+                android:layout_marginLeft="@dimen/mLeft18"
+                android:layout_marginTop="@dimen/mTop5"
+                android:contentDescription="@string/Image_Desc"
+                android:src="@drawable/step_enable_logo" />
+
+            <View
+                android:layout_width="@dimen/width18"
+                android:layout_height="@dimen/width1"
+                android:layout_marginLeft="@dimen/mLeft1"
+                android:background="@color/blue_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft1"
+                android:text="找到车辆"
+                android:textColor="@color/color_2"
+                android:textSize="@dimen/tSize16" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mLeft10"
+                android:text="(1/4步)"
+                android:textColor="@color/color_19"
+                android:textSize="@dimen/tSize13" />
+       </LinearLayout>
+        <!-- 步骤提示信息 end -->
+    </RelativeLayout>
+    <!-- 第一部分 end -->
+    
+    <!-- 第二部分 begin -->
+    <RelativeLayout
+        android:id="@+id/center_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/found_activity_part_1"
+        >
+        <!-- 分割线 2 begin -->
+        <View
+            android:layout_width="@dimen/width1"
+            android:layout_height="match_parent"
+            android:id="@+id/seperator_2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/mLeft25"
+            android:background="@color/blue_bg" />
+        <!-- 分割线 2 end -->
+        
+        <!-- 车辆信息 begin -->
+        <RelativeLayout
+            android:id="@+id/arrive_act_tip_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/mLeft30"
+            android:layout_alignLeft="@id/seperator_2"
+            >
+            <!-- 温馨提示 begin -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/found_act_tip_ll"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/mTop5"
+                    android:paddingTop="@dimen/mTop5"
+                    android:text="温馨提示: 找不到车您可以联系客服或用户"
+                    android:textColor="@color/color_19"
+                    android:textSize="@dimen/tSize12" />
+            </LinearLayout>
+            <!-- 温馨提示 end -->
+            <!-- 车辆位置信息 begin -->
+            <LinearLayout
+                android:id="@+id/found_act_car_position_ll"
+                android:layout_width="match_parent"
+                android:layout_below="@id/found_act_tip_ll"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/mTop5"
+                android:orientation="horizontal"
+                 >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="停车点"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/tSize20" />
+                <TextView
+                    android:id="@+id/found_act_car_position_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="--"
+                    android:textColor="@color/color_17"
+                    android:textSize="@dimen/tSize22" />
+            </LinearLayout>
+            <!-- 车辆位置信息 begin -->
+            
+            <!-- 备注begin -->
+            <LinearLayout
+                android:id="@+id/found_act_car_comment_ll"
+                android:layout_width="match_parent"
+                android:layout_below="@id/found_act_car_position_ll"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/mTop5"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="备    注"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/tSize20" />
+                <TextView
+                    android:id="@+id/found_act_car_comment_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="--"
+                    android:textColor="@color/color_17"
+                    android:textSize="@dimen/tSize22" />
+            </LinearLayout>
+            <!-- 备注end -->
+            
+            <!-- 车牌 begin -->
+            <LinearLayout
+                android:id="@+id/found_act_car_number_ll"
+                android:layout_width="match_parent"
+                android:layout_below="@id/found_act_car_comment_ll"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/mTop5"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="车牌号"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/tSize20" />
+                <TextView
+                    android:id="@+id/found_act_car_number_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="--"
+                    android:textColor="@color/color_17"
+                    android:textSize="@dimen/tSize22" />
+            </LinearLayout>
+            <!-- 车牌 end -->
+            
+            <!-- 车型 begin -->
+            <LinearLayout
+                android:id="@+id/found_act_car_type_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mTop5"
+                android:gravity="center_vertical"
+                android:layout_below="@id/found_act_car_number_ll"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="车    型"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/tSize20" />
+
+                <TextView
+                    android:id="@+id/found_act_car_type_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="--"
+                    android:textColor="@color/color_17"
+                    android:textSize="@dimen/tSize22" />
+            </LinearLayout>
+            <!-- 车型 end -->
+            
+            <!-- 车颜色 begin -->
+            <LinearLayout
+                android:id="@+id/found_act_car_color_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/mTop5"
+                android:layout_below="@id/found_act_car_type_ll"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="颜    色"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/tSize20" />
+
+                <TextView
+                    android:id="@+id/found_act_car_color_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:text="--"
+                    android:textColor="@color/color_17"
+                    android:textSize="@dimen/tSize22" />
+            </LinearLayout>
+            <!-- 车颜色 end -->
+            
+            <!-- 车辆照片 begin -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mTop5" 
+                android:layout_below="@+id/found_act_car_color_ll"
+                >
+                <ImageView 
+                    android:layout_height="@dimen/height100"
+                    android:layout_width="match_parent"
+                    android:id="@+id/found_act_car_pic_iv"
+                    android:src="@drawable/no_car_pic_tip_pic"
+                    android:scaleType="centerInside"
+                    />
+            </LinearLayout>
+            <!-- 车辆照片 end -->
+            
+            <!-- 按钮  begin -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom ="@dimen/mBottom10"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/found_act_found_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mRight30"
+                    android:background="@drawable/shape_blue_btn"
+                    android:text="我已找到"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tSize18" />
+            </LinearLayout>
+            <!-- 按钮  end -->
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    <!-- 第二部分 end -->
+</RelativeLayout>

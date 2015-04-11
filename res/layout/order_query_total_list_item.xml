@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/color_30"
+    android:layout_height="@dimen/height40" >
+    <TextView 
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:textColor="@color/color_14"
+        android:textSize="@dimen/tSize20"
+        android:text="今日"
+        android:layout_marginLeft="@dimen/width15"
+        android:gravity="center_vertical"
+        android:id="@+id/order_query_total_date_tv"
+        />
+</LinearLayout>
